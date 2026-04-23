@@ -2,25 +2,27 @@ import streamlit as st
 from memory import get_bot_response
 
 # page config
-st.set_page_config(page_title="AI Chatbot", page_icon="🤖")
+st.set_page_config(page_title="AI Chatbot", page_icon="https://i.pinimg.com/736x/a6/57/df/a657df04b3d9a5a9476ed20534b2e0b8.jpg")
 
 # custom CSS
 st.markdown("""
 <style>
 
-body {
-    background-color: #f1a9ff;
+.stApp {
+    background-image: url("https://i.pinimg.com/1200x/9b/c1/45/9bc14505d003f56e2095478e7746dd7c.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .chat-user {
-    background-color: #f1a9ff;
+    background-color: #FC7256;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 8px;
 }
 
 .chat-bot {
-    background-color: #FF91A6;
+    background-color: #FF709D;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 8px;
@@ -35,7 +37,7 @@ body {
 </style>
 """, unsafe_allow_html=True)
 
-st.title("AI Chatbot with Memory")
+st.title("🤖 AI Chatbot with Memory")
 
 # initialize messages
 if "messages" not in st.session_state:
